@@ -1,0 +1,13 @@
+{
+	"name": "test",
+	"sq_size": 128,
+	"size": 1024,
+	"noise": true,
+	"noise_width": 35,
+	"input_path": "input/img/test",
+	"output_path": "output/img/test",
+	"output_file": "debug",
+	"game": "You vs me",
+	"event": "2331",
+	"game_heat_map": "1,1,1,1,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,1,1,1,1"
+}

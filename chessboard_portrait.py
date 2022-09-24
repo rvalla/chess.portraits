@@ -12,8 +12,10 @@ class Portrait():
 		self.config = js.load(open(config_file))
 		self.sq_size = self.config["sq_size"]
 		self.size = self.sq_size * 8
+		self.noise_width = self.load_noise_weight(self.config["noise"], self.config["noise_width"])
 		self.output_data = np.full((self.size, self.size, 3), (0,0,0))
 		self.input_data = self.build_input_data(self.config["input_path"])
+		self.heat_map = self.get_heat_map(self.config["game_heat_map"])
 		self.paint_output()
 		self.save()
 
@@ -22,17 +24,24 @@ class Portrait():
 			in_img = rd.choice(self.input_data)
 			c, f = divmod(s, 8)
 			negative = self.check_negative(c, f)
-			start_x = self.sq_size * f
-			start_y = self.sq_size * c
+			start_x = self.sq_size * c
+			start_y = self.sq_size * (7 - f) #To iterate following the heatmap squares order...
 			for i in range(self.sq_size):
 				for j in range(self.sq_size):
 					x = start_x + i
 					y = start_y + j
 					if negative:
-						pixel = in_img.get_inverted_pixel(x, y)
+						pixel = self.get_pixel(in_img.get_inverted_pixel(x, y), self.heat_map[s])
 					else:
-						pixel = in_img.get_pixel(x, y)
+						pixel = self.get_pixel(in_img.get_pixel(x, y), self.heat_map[s])
 					self.output_data[x][y] = pixel
+
+	def get_pixel(self, color, sq_weight):
+		variation = round(rd.randint(0,self.noise_width) * sq_weight)
+		r = color[0] - variation
+		g = color[1] - variation
+		b = color[2] - variation
+		return (r, g, b)
 
 	def check_negative(self, c, f):
 		if (c + f)%2 == 0:
@@ -50,6 +59,18 @@ class Portrait():
 		for img in input_files:
 			ls.append(Source(self.sq_size, self.size, im.open(input_path + "/" + img)))
 		return ls
+
+	def get_heat_map(self, source):
+		weights = []
+		for v in source.split(","):
+			weights.append(float(v))
+		return weights
+
+	def load_noise_weight(self, is_noisy, width):
+		if is_noisy:
+			return width
+		else:
+			return 0
 
 	def __str__(self):
 		return "Hi, I am a chessboard portrait instance..." + "\n" + \

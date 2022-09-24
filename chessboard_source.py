@@ -1,6 +1,4 @@
 import numpy as np
-import random as rd
-from PIL import Image as im
 
 class Source():
 	"The class to store input data for a portrait"
