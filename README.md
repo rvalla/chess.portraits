@@ -1,4 +1,4 @@
-![logo](https://gitlab.com/azarte/azarte.gitlab.io/-/raw/master/public/assets/img/logo_64.png)
+![logo](https://gitlab.com/azarte/chessportraits/-/raw/themoststable/assets/img/icon.png)
 
 # chessboard portraits
 
