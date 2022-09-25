@@ -7,6 +7,7 @@ class Source():
 		self.sq_size = sq_size
 		self.size = size
 		self.img_data = np.array(image)
+		print("A new source image is ready...", "\r")
 
 	def get_pixel(self, x, y):
 		return self.img_data[x][y]

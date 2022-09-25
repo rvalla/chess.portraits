@@ -1,13 +1,12 @@
 {
 	"name": "test",
-	"sq_size": 128,
-	"size": 1024,
+	"sq_size": 64,
+	"size": 512,
 	"noise": true,
-	"noise_width": 35,
-	"input_path": "input/img/test",
-	"output_path": "output/img/test",
-	"output_file": "debug",
-	"game": "You vs me",
-	"event": "2331",
-	"game_heat_map": "1,1,1,1,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,1,1,1,1"
+	"noise_width": 50,
+	"input_path": "input/img/debug",
+	"output_path": "output/img/debug",
+	"output_file": "debug_3",
+	"game_path": "input/pgn/pgn_source_00124.pgn",
+	"piece_weight": "1,3,3,5,9,9"
 }

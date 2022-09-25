@@ -4,14 +4,13 @@ import chess.pgn as chpgn
 class Heatmap():
 	"The class to store a chess game heatmap"
 
-	#in chess library piece type are numbers (p = 1, n = 2, b = 3, r = 4, q = 5 and k = 6)
-	piece_weight = {1: 1, 2: 3, 3: 3, 4: 5, 5: 9, 6: 9}
-
-	def __init__(self, pgn_path):
+	def __init__(self, pgn_path, piece_weight):
 		self.game = chpgn.read_game(open(pgn_path))
 		self.heatmap = [0 for sq in range(64)]
+		self.piece_weight = piece_weight #list with relative weights for each piece type
 		self.board = ch.Board()
 		self.calculate_heat()
+		print("A new heatmap is ready...", end="\n")
 
 	def calculate_heat(self):
 		self.evaluate_board()
@@ -31,7 +30,7 @@ class Heatmap():
 				self.heatmap[sq] += w
 
 	def get_piece_weight(self, piece):
-		return self.piece_weight[piece]
+		return self.piece_weight[piece - 1]
 
 	def normalize_map(self):
 		max_w = max(self.heatmap)
