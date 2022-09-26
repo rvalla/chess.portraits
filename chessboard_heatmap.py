@@ -43,6 +43,7 @@ class Heatmap():
 		file = open(file_path, "a")
 		line = self.game.headers["White"] + ";"
 		line += self.game.headers["Black"] + ";"
+		line += self.game.headers["Event"] + ";"
 		line += self.game.headers["Date"].split(".")[0] + ";"
 		line += self.heatmap_to_string() + "\n"
 		file.write(line)
