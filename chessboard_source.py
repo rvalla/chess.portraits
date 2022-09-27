@@ -18,6 +18,17 @@ class Source():
 		b = 255 - self.img_data[x][y][2]
 		return (r, g, b)
 
+	def get_lightness_average(self):
+		pixels = self.sq_size * self.sq_size
+		lightness = 0
+		for f in range(self.sq_size):
+			for c in range(self.sq_size):
+				r = int(self.img_data[f][c][0])
+				g = int(self.img_data[f][c][0])
+				b = int(self.img_data[f][c][0])
+				lightness += (r + g + b) / 3
+		return lightness / pixels
+
 	def __str__(self):
 		return "Hi, I am an image source for a chessboard portrait instance..." + "\n" + \
 				"That's all!"

@@ -49,6 +49,12 @@ class Heatmap():
 		file.write(line)
 		file.close()
 
+	def get_players_and_date(self):
+		white = self.game.headers["White"].split(",")[0]
+		black = self.game.headers["Black"].split(",")[0]
+		year = self.game.headers["Date"].split(".")[0]
+		return [white, black, year]
+
 	def heatmap_to_string(self):
 		s = str(self.heatmap[0])
 		for w in self.heatmap[1:]:
