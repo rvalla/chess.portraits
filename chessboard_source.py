@@ -24,8 +24,8 @@ class Source():
 		for f in range(self.sq_size):
 			for c in range(self.sq_size):
 				r = int(self.img_data[f][c][0])
-				g = int(self.img_data[f][c][0])
-				b = int(self.img_data[f][c][0])
+				g = int(self.img_data[f][c][1])
+				b = int(self.img_data[f][c][2])
 				lightness += (r + g + b) / 3
 		return lightness / pixels
 
