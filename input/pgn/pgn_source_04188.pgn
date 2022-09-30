@@ -1,0 +1,17 @@
+[Event "Frankfurt sim"]
+[Site "Frankfurt"]
+[Date "1999.??.??"]
+[Round "?"]
+[White "Polgar, Judit"]
+[Black "Baumeister, J."]
+[Result "1-0"]
+[WhiteElo "2675"]
+[BlackElo ""]
+[ECO "C47"]
+
+1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4 Nf6 5.Nc3 Bb4 6.Nxc6 bxc6 7.Bd3 O-O 8.O-O h6
+9.e5 Bxc3 10.bxc3 Nd5 11.Bxh6 Qh4 12.Bd2 d6 13.c4 Nb6 14.Re1 d5 15.cxd5 cxd5
+16.Rb1 a5 17.Be3 Kh8 18.Bxb6 cxb6 19.Rxb6 Be6 20.Re3 Qg5 21.h4 Qg4 22.Qxg4 Bxg4
+23.f3 Be6 24.f4 Rfb8 25.Rxb8+ Rxb8 26.f5 d4 27.Re1 Bxa2 28.Ra1 Rb1+ 29.Rxb1 Bxb1
+30.Bb5 Bxc2 31.e6 fxe6 32.fxe6 Bg6 33.e7  1-0
+

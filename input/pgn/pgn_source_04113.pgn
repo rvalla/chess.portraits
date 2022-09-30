@@ -1,0 +1,16 @@
+[Event "Budapest comp m"]
+[Site "Budapest"]
+[Date "1999.04.30"]
+[Round "7"]
+[White "Polgar, Judit"]
+[Black "Comp Fritz 5.32"]
+[Result "1-0"]
+[WhiteElo "2677"]
+[BlackElo ""]
+[ECO "B83"]
+
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Be3 e6 7.Be2 Be7 8.g4 d5
+9.exd5 Nxd5 10.Nxd5 exd5 11.Qd2 O-O 12.O-O-O Nxd4 13.Bxd4 Qe8 14.f4 Qa4 15.Kb1 Bd7
+16.Bf3 Rad8 17.f5 Bc8 18.h4 Rfe8 19.h5 Rd6 20.h6 g6 21.Be5 Bg5 22.Qh2 Rb6
+23.Bxd5 Qxg4  1-0
+

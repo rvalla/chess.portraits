@@ -1,0 +1,23 @@
+[Event "New York m"]
+[Site "New York"]
+[Date "1993.??.??"]
+[Round "1"]
+[White "Comp Deep Blue"]
+[Black "Polgar, Judit"]
+[Result "1-0"]
+[WhiteElo ""]
+[BlackElo "2595"]
+[ECO "B47"]
+
+1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 Qc7 6.Be2 a6 7.O-O Bb4 8.Nxc6 bxc6
+9.Qd4 Bd6 10.Qxg7 Bxh2+ 11.Kh1 Be5 12.Bf4 Bxg7 13.Bxc7 d5 14.Rad1 Ne7 15.Na4 Ra7
+16.Bd6 Ra8 17.c3 Ng6 18.Bc7 Ra7 19.Bb8 Rb7 20.Bg3 O-O 21.exd5 cxd5 22.Rfe1 f5
+23.Bd6 Rd8 24.Ba3 Rc7 25.Bb4 Rc6 26.Ba5 Rf8 27.Bb6 Rf7 28.Kg1 Bf8 29.b3 Bb7
+30.Bh5 Re7 31.Kf1 Kf7 32.c4 Rc8 33.Ba5 dxc4 34.Nb6 Rb8 35.Nd7 Rc8 36.Bb4 cxb3
+37.Nxf8 Rxf8 38.axb3 Rb8 39.Bxe7 Kxe7 40.Rd4 a5 41.Ra4 Bc6 42.Rxa5 Rxb3 43.Ra7+ Kf6
+44.Rxh7 Nf4 45.g3 Bb5+ 46.Kg1 Nh3+ 47.Kg2 Ng5 48.Rh6+ Ke7 49.Re5 Bc6+ 50.Kf1 Rb1+
+51.Re1 Rb2 52.Be2 Ne4 53.Rd1 Bd5 54.Rc1 Nd2+ 55.Ke1 Ne4 56.Ra1 Nc3 57.Bd3 Na2
+58.Kf1 Nb4 59.Bxf5 Nc6 60.Rd1 Bc4+ 61.Bd3 Bb3 62.Rb1 Rxb1+ 63.Bxb1 Bd5 64.Rh7+ Kf6
+65.Rh4 Ne5 66.Ke2 Bf3+ 67.Ke3 Bc6 68.f4 Nf7 69.g4 e5 70.g5+ Kg7 71.Rh7+ Kg8
+72.g6 exf4+ 73.Kxf4  1-0
+

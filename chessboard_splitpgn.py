@@ -1,11 +1,11 @@
 import os
 
-files = [f for f in os.listdir("input/pgn") if not f.startswith(".")]
+files = [f for f in os.listdir("assets/temp") if not f.startswith(".")]
 name = "pgn_source_"
-game = 0
+game = 1075
 for file in files:
 	print(file)
-	lines = open("input/pgn/" + file).readlines()
+	lines = open("assets/temp/" + file).readlines()
 	line_number = 0
 	s = ""
 	while line_number < len(lines):
